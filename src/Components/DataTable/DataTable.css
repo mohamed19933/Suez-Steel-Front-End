@@ -1,0 +1,58 @@
+.rdt_Pagination {
+    width: 85% !important;
+    color: var(--side-text-color) !important;
+    border:3px solid var(--table-header-border-color) !important;
+    background-color: var(--table-header-bg-color) !important;
+}
+
+
+.rdt_Pagination>svg {
+    
+    background-color: var(--side-text-color) !important;
+
+    
+}
+
+/* Change color of SVG inside pagination button */
+.rdt_Pagination>div>button>svg {
+  fill: var(--side-text-color) !important;
+}
+
+
+.rdt_Pagination:hover {
+    /* box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.5), inset 6px 6px 20px rgba(79, 77, 77, 0.05); */
+    cursor: pointer;
+}
+
+
+.rdt_TableHeadRow {
+    background-color: var(--table-header-bg-color) !important;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--table-header-text-color);
+    
+ 
+}
+
+
+.data-table-extensions>.data-table-extensions-action>button.download {
+    color: red !important;
+}
+
+.datatable {
+    width: 100vw !important;
+    border: 3px solid  var(--table-header-border-color);
+    margin-top: 15px;
+  
+}
+
+.masterDiv {
+    width: 100% !important;
+    flex-direction: column;
+    display: flex !important;
+    align-items: center !important;
+    margin-top: 15px;
+    
+    
+}
+

@@ -1,0 +1,15 @@
+.filterHeader {
+    background-color: var(--filter-header-background);
+    border-width: 1px;
+    border-style: solid;
+    border-top-left-radius: var(--filter-radis-curve);
+    border-top-right-radius: var(--filter-radis-curve);
+
+}
+
+.filterNameHeader {
+    color: #EBEBEB;
+    font-size: var(--filter-header-font-size);
+    font-weight: var(--filter-header-font-wgt);
+    padding-left: var(--filter-header-padding);
+}

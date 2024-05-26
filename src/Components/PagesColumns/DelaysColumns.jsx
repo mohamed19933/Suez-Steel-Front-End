@@ -1,0 +1,80 @@
+import Moment from "react-moment";
+
+const delaysColumns = [
+  {
+    name: "ID",
+    cell: (row) => row.DELAY_CNT,
+    sortable: true,
+    center: false,
+    wrap: true,
+    grow: 1,
+  },
+  {
+    name: "Active",
+    cell: (row) => row.STOP_STATUS,
+    sortable: true,
+    center: true,
+    wrap: true,
+    grow: 1,
+		omit: true,
+  },
+  {
+    name: "Start",
+    cell: (row) => <Moment date={row.START_DELAY} format="DD/MM/YYYY HH:mm" />,
+    sortable: true,
+    center: false,
+    wrap: true,
+    grow: 1,
+  },
+  {
+    name: "End",
+    cell: (row) => <Moment date={row.END_DELAY} format="DD/MM/YYYY HH:mm" />,
+    sortable: true,
+    center: false,
+    wrap: true,
+    grow: 1,
+  },
+  {
+    name: "Dur",
+    // cell: (row) => <Moment date={row.DURATION} format="HH:mm" />,
+    cell: (row) => row.DURATION,
+    sortable: true,
+    center: false,
+    wrap: true,
+    grow: 1,
+  },
+  {
+    name: "Center",
+    cell: (row) => row.CENTER_CODE,
+    sortable: true,
+    center: true,
+    wrap: true,
+    grow: 1,
+  },
+  {
+    name: "Device",
+    cell: (row) => row.DEVICE,
+    sortable: true,
+    center: true,
+    wrap: true,
+    grow: 1,
+  },
+  {
+    name: "Reason",
+    cell: (row) => row.REASON,
+    sortable: true,
+    center: true,
+    wrap: true,
+    grow: 1,
+  },
+  {
+    name: "Shift",
+    cell: (row) => row.SHIFT + "-" + row.CREW,
+    sortable: true,
+    center: true,
+    wrap: true,
+    grow: 1,
+  },
+];
+
+export default delaysColumns;

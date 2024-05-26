@@ -1,0 +1,107 @@
+/* .divMaster_Search {
+    padding: 25px !important;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    width: 95%;
+    background-color: var(--search-panel-background);
+    border-radius: 9px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 10px var(--box-shadow--search) !important;
+}
+
+.filterCss {
+    width: 220px;
+}
+
+.divMaster_Search>* {
+    flex: 0 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .styles .divMaster_Search>* {
+        flex-basis: calc(50% - 0.5rem);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .styles .divMaster_Search>* {
+        flex-basis: calc(100% - 0.5rem);
+    }
+} */
+
+
+.divMaster_Search {
+    padding: 25px !important;
+    display: flex;
+    gap: 1rem;
+    /* width: 95%; */
+    background-color: var(--search-panel-background);
+    border-radius: 9px;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 10px var(--box-shadow--search) !important;
+}
+
+.filterCss {
+    width: 220px !important;
+    padding: 5px !important;
+}
+.dateTimeCSS{
+    padding: 5px !important;
+}
+.dateTimeCSS>div {
+    height: 40px !important;
+    width: 220px !important;
+
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 9999; /* Ensure it's above other elements */
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .divMaster_Search>* {
+        flex-basis: 50%;
+        /* Two elements per line */
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .divMaster_Search>* {
+        flex-basis: 33.33%;
+        /* Three elements per line */
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .divMaster_Search>* {
+        flex-basis: 33.33%;
+        /* Three elements per line */
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .divMaster_Search>* {
+        flex-basis: auto;
+        /* Allow elements to fill the container */
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .divMaster_Search>* {
+        flex-basis: auto;
+        /* Allow elements to fill the container */
+    }
+}

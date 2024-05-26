@@ -1,0 +1,44 @@
+.Filter {
+  display: block;
+}
+
+
+.searchStyle {
+  display: flex;
+}
+
+.searchtextFields {
+  width: 230px !important;
+  padding: 5px !important;
+}
+
+.searchtextFields>label,
+.searchtextFields>div {
+  color: var(--side-text-color);
+}
+
+.searchtextFields>div {
+  font-size: 1em;
+}
+
+.searchtextFields>div>svg {
+  color: var(--svg-search-color) !important;
+}
+
+.searchtextFields>div>fieldset {
+  border-color: var(--border-search-color) !important;
+}
+
+.divMaster_Search {
+  padding: 25px !important;
+  display: block;
+  gap: 1rem;
+  /* width: 95%; */
+  background-color: var(--search-panel-background);
+  border-radius: 9px;
+  margin-bottom: 5px;
+  box-shadow: 3px 3px 3px var(--box-shadow--search) !important;
+  justify-content: center;
+  align-items: baseline;
+  border: 3px solid var(--table-header-border-color) !important;
+}

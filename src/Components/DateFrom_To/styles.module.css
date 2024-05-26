@@ -1,0 +1,78 @@
+.dateTimePicker {
+    display: flex;
+}
+
+.dateTimePicker>div {
+    display: flex !important;
+    flex-direction: row;
+
+}
+
+/* .dateTimeStyle {
+} */
+
+.dateTimeStyle>label {
+    color: var(--side-text-color);
+}
+
+.dateTimeStyle>div>fieldset {
+    border-color: var(--border-search-color) !important;
+
+}
+
+/* .dateTimeStyle>div {
+    height: 49.5px !important;
+    font-size: 1.4rem;
+    font-weight: normal;
+    overflow: hidden;
+} */
+
+
+.dateTimeStyle>div>div>button>svg,
+.dateTimeStyle>div>div>button>svg {
+    color: var(--side-text-color);
+}
+
+.dateTimePicker {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Allow items to wrap onto the next line on smaller screens */
+}
+
+.dateTimeStyle {
+    /* Adjust width and other properties */
+    width: 100%;
+    /* Take full width on smaller screens */
+    margin-bottom: 10px;
+    /* Add some spacing between items */
+    width: 280px !important;
+    padding-right: 5px !important;
+    border-color: var(--border-search-color);
+}
+
+.dateTimeStyle>div {
+    height: 49.55px !important;
+  
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* Apply styles only for screens larger than 768px */
+    .dateTimeStyle {
+        width: calc(50% - 10px);
+        /* Set width to 50% minus some margin */
+        margin-right: 20px;
+        /* Add some spacing between items */
+        margin-bottom: 0;
+        /* Reset margin bottom */
+       
+    }
+
+    .dateTimeStyle:last-child {
+        margin-right: 0;
+        /* Remove margin right for the last item in a row */
+    }
+}
+
+/* Adjust other styles as needed for responsiveness */

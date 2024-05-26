@@ -1,0 +1,24 @@
+.Iconcss {
+   color: var(--side-text-color) !important;
+   font-size: var(--font-size--sidebar) !important;
+
+}
+
+.textColor {
+   color: var(--side-text-color) !important;
+   overflow-x: hidden;
+   font-size: var(--font-size--sidebar) !important;
+}
+
+.textColor>span {
+   text-decoration: none !important;
+   font-size: var(--font-size--sidebar) !important;
+
+}
+
+
+/* styles.module.css */
+.activeLink {
+   color: blue;
+   background-color: lightgray;
+}

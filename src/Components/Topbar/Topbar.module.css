@@ -1,0 +1,24 @@
+.Headercss {
+    background-color: var(--secondary-color) !important;
+    flex-direction: row !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    height: 64PX !important;
+}
+
+.Iconcss {
+    color: var(--page-title-font) !important;
+    font-size: 30px !important;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+
+}
+.logo {
+    width: 75px;
+    height: 100%;
+    margin-right: 10px;
+   
+  }

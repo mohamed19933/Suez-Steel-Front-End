@@ -1,0 +1,12 @@
+.containerDiv {
+  width: 100%;
+}
+
+.pageTitleh2 {
+  font-size: 45px;
+  line-height: 1.2;
+  color: var(--page-title-font);
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}

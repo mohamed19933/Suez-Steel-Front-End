@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  /* colors */
+  --blue-color: #475be8;
+  --green-color: #4ce13f;
+  --orange-color: #f29a2e;
+  --red-color: #ef0606;
+  --dark-color: #292929;
+  --light-color: #ffffff;
+  /* typography */
+  --font-family-lato: "Lato", sans-serif;
+  --font-family-manrope: "Manrope", sans-serif;
+  --font-size: 16px;
+  --line-height: 1.6;
+  --font-weight: 400;
+  /* transition */
+  --default-transition: all 300ms ease-in-out;
+  /* chart */
+  --chart-primary-color: #475be8;
+  --chart-secondary-color: #e6e6e6;
+  /* box shadow */
+  --light-shadow1: rgba(0, 0, 0, 0.02) 0px 4px 12px;
+
+  /*Header Font Size*/
+  --filter-radis-curve: 5px;
+  --filter-header-font-size: 20px;
+  --filter-header-padding: 3px;
+  --filter-header-font-wgt: bold;
+  --side-text-color: #808191 !important;
+  --font-size--sidebar:20px !important;
+}
+
+/* color mode toggle mixins */
+.lightMode {
+  --primary-color: #475be8;
+  --secondary-color: #fefefe;
+  --background-color: #f4f4f4;
+  --side-link-hover-color: #f6f6f6;
+  --side-text-color: #3e4959;
+  --logo-color: var(--primary-color);
+  --xl-text-color: #292929;
+  --lg-text-color: #525252;
+  --base-text-color: #676767;
+  --text-color-inverted: #292929;
+  --bg-color-inverted: #ffffff;
+  --border-color-inverted: #f6f6f6;
+  --toggle-btn-border-color: #f3f3f3;
+  --toggle-btn-bg-color: #fff;
+  --toggle-btn-icon-color: var(--primary-color);
+  --thead-bg-color: #f2f4ff;
+  --tbl-border-color: #f2f4ff;
+  --scroll-track-bg-color: #fff;
+  --scroll-thumb-bg-color: #e9e9e9;
+  --page-title-font: #808191;
+  --pageTitle: #73879C;
+  --tableExtenision: #282C35;
+  --filter-header-background: #111213;
+  --filter-content-background: #fff;
+  --page-title-bg: #fff;
+  --page-title-bg-linear-color1: #fff;
+  --page-title-bg-linear-color2: #fff;
+  --table-header-bg-color: #e9ecef;
+  --table-header-text-color: #212529;
+  --table-header-border-color:#f0f0f0;
+  --search-panel-background:#fefefe;
+  --search-button-color:#333333;
+  --search-button-color-before: #333d46;
+  --search-button-color-after: #ffffff15;
+  --svg-search-color: rgb(20, 20, 20);
+  --border-search-color: rgb(149, 149, 149);
+  --box-shadow--search:rgba(37, 17, 17, 0.98);
+  --border-search-div-color:rgba(0, 0, 0, 0.87) ;  
+  --pagination--color: rgb(20, 20, 20, 0.98) !important;
+  
+}
+
+.darkMode {
+  --primary-color: #475be8;
+  --secondary-color: #333333;
+  --background-color: #2c2c2c;
+  --side-link-hover-color: #525270;
+  --side-text-color: rgb(224, 224, 224, 0.98); 
+  --logo-color: #fff;
+  --xl-text-color: #ffff;
+  --lg-text-color: #f3f3f3;
+  --base-text-color: #e0e0e0;
+  --text-color-inverted: #fff;
+  --bg-color-inverted: #292929;
+  --border-color-inverted: #575777;
+  --toggle-btn-border-color: #525270;
+  --toggle-btn-bg-color: #525270;
+  --toggle-btn-icon-color: #bdbdbd;
+  --thead-bg-color: #383854;
+  --tbl-border-color: #383854;
+  --scroll-track-bg-color: #2e2e48;
+  --scroll-thumb-bg-color: #575777;
+  --font-size: var(--h6-font-size);
+  --page-title-font: rgb(224, 224, 224);
+  --svg-search-color: rgb(224, 224, 224);
+  --border-search-color: rgb(224, 224, 224);
+  --tableExtenision: #333d46;
+  --filter-header-background: #111213;
+  --filter-content-background: #1B1D1E;
+  --page-title-bg: #333d46;
+  --page-title-bg-linear-color1: #333d46;
+  --page-title-bg-linear-color2: #333d46;
+  --table-header-bg-color: #2c2c2ce6;
+  --table-header-text-color: #f8f9fa;
+  --table-header-border-color:#313131;
+  --search-panel-background: #2c2c2ce6; /* A shade darker than #333333 and lighter than #424242 */
+
+  --search-button-color:#f0f0f0;
+  --search-button-color-before: #e5e5e5;
+  --search-button-color-after: #28282d;
+  --border-search-div-color:  #f0f0f0;
+  --pagination--color: #333333;
+--box-shadow--search:#0b0b0b;
+
+}
+
+
+.page-wrapper {
+  /* background-color: var(--background-color); */
+  min-height: 100vh;
+  overflow: hidden;
+}

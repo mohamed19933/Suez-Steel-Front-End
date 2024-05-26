@@ -1,0 +1,80 @@
+/* Default styles */
+
+.Filter {
+  display: block;
+}
+
+.filterCss {
+  width: 75% !important;
+  padding: 5px !important;
+  border-color: var(--border-search-color) !important;
+  color: var(--side-text-color) !important;
+}
+
+.searchStyle {
+  display: flex;
+}
+
+.searchtextFields {
+  width: 12vw !important;
+  padding: 5px !important;
+}
+
+.searchtextFields>label,
+.searchtextFields>div {
+  color: var(--side-text-color);
+}
+
+.searchtextFields>div>svg {
+  fill: var(--side-text-color) !important;
+}
+
+.searchtextFields button svg {
+  color: var(--side-text-color) !important;
+}
+
+.searchtextFields>div>fieldset {
+  border-color: var(--border-search-color) !important;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 9999; /* Ensure it's above other elements */
+}
+
+.divMaster_Search {
+  padding: 25px !important;
+  display: flex;
+  gap: 1rem;
+  background-color: var(--search-panel-background);
+  border-radius: 9px;
+  margin-bottom: 5px;
+  box-shadow: 3px 3px 3px var(--box-shadow--search) !important;
+  justify-content: center;
+  align-items: baseline;
+  border: 3px solid var(--table-header-border-color) !important;
+}
+
+/* Media queries for adjusting styles for different screen sizes */
+
+@media screen and (max-width: 992px) {
+  .divMaster_Search {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .searchtextFields {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .searchtextFields {
+    width: 80%;
+  }
+}
